@@ -1,0 +1,38 @@
+!
+router eigrp Saint-P
+ !
+ address-family ipv4 unicast autonomous-system 4
+  !
+  af-interface Ethernet0/0
+   passive-interface
+  exit-af-interface
+  !
+  af-interface Ethernet0/1
+   summary-address 31.52.6.0 255.255.255.0
+   summary-address 35.52.0.0 255.255.252.0
+  exit-af-interface
+  !
+  af-interface Ethernet0/3
+   summary-address 0.0.0.0 0.0.0.0
+  exit-af-interface
+  !
+  topology base
+  exit-af-topology
+  network 31.52.0.0 0.0.3.255
+  network 31.52.6.0 0.0.0.3
+  network 31.52.6.8 0.0.0.3
+  network 31.52.6.12 0.0.0.3
+  eigrp router-id 1.1.1.16
+ exit-address-family
+ !
+ address-family ipv6 unicast autonomous-system 4
+  !
+  af-interface Ethernet0/3
+   summary-address ::/0
+  exit-af-interface
+  !
+  topology base
+  exit-af-topology
+  eigrp router-id 0.0.0.16
+ exit-address-family
+!

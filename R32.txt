@@ -1,0 +1,17 @@
+router eigrp Saint-P
+ !
+ address-family ipv4 unicast autonomous-system 4
+  !
+  topology base
+  exit-af-topology
+  network 31.52.6.12 0.0.0.3
+  eigrp router-id 1.1.1.32
+ exit-address-family
+ !
+ address-family ipv6 unicast autonomous-system 4
+  !
+  topology base
+  exit-af-topology
+  eigrp router-id 0.0.0.32
+ exit-address-family
+!
