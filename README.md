@@ -102,3 +102,14 @@ ipv6 route ::/0 200C:C0FE:1111:50::2
 Проверим таблицу мрашрутизации R17.
 
 ![](https://github.com/dmitriyklimenkov/EIGRP/blob/main/R17%20table.PNG)
+
+
+Полные конфигурации:
+
+Файл конфигурации R16 [здесь](https://github.com/dmitriyklimenkov/EIGRP/blob/main/R16.txt).
+
+Файл конфигурации R17 [здесь](https://github.com/dmitriyklimenkov/EIGRP/blob/main/R17.txt).
+
+Файл конфигурации R18 [здесь](https://github.com/dmitriyklimenkov/EIGRP/blob/main/R18.txt).
+
+Файл конфигурации R32 [здесь](https://github.com/dmitriyklimenkov/EIGRP/blob/main/R32.txt).
